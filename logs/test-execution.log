@@ -1,0 +1,146 @@
+2026-10-28 15:31:49 INFO  TestListener - START: validateSearch
+2026-10-28 15:31:57 INFO  TestListener - PASS: validateSearch
+2026-10-28 15:32:01 INFO  TestListener - START: validateSorting
+2026-10-28 15:32:01 ERROR TestListener - FAIL: validateSorting
+java.lang.AssertionError: No obvious sort control was found and the visible product names are not alphabetically sorted. Add the correct sort locator for this page. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.10.2.jar:7.10.2]
+	at pages.WebTablePage.validateSorting(WebTablePage.java:102) ~[test-classes/:?]
+	at tests.NavigationValidationTest.validateSorting(SortingValidationTest.java:6) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.2.jar:3.5.2]
+2026-10-28 15:32:06 INFO  TestListener - START: validateFilter
+2026-10-28 15:32:06 INFO  TestListener - PASS: validateFilter
+2026-10-28 15:32:12 INFO  TestListener - START: validatePagination
+2026-10-28 15:32:12 INFO  TestListener - PASS: validatePagination
+2026-10-28 15:32:18 INFO  TestListener - START: validateSearchSortingFilteringAndPagination
+2026-10-28 15:32:25 ERROR TestListener - FAIL: validateSearchSortingFilteringAndPagination
+java.lang.AssertionError: No obvious sort control was found and the visible product names are not alphabetically sorted. Add the correct sort locator for this page. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.10.2.jar:7.10.2]
+	at pages.WebTablePage.validateSorting(WebTablePage.java:102) ~[test-classes/:?]
+	at pages.WebTablePage.validateEndToEnd(WebTablePage.java:147) ~[test-classes/:?]
+	at tests.EndToEndValidationTest.validateSearchSortingFilteringAndPagination(EndToEndValidationTest.java:6) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.2.jar:3.5.2]
+2026-10-28 16:12:43 INFO  TestListener - START: validateSearch
+2026-10-28 16:12:43 INFO  TestListener - PASS: validateSearch
+2026-10-28 16:12:48 INFO  TestListener - START: validateSorting
+2026-10-28 16:12:51 INFO  TestListener - PASS: validateSorting
+2026-10-28 16:12:56 INFO  TestListener - START: validateFilter
+2026-10-28 16:12:57 INFO  TestListener - PASS: validateFilter
+2026-10-28 16:13:03 INFO  TestListener - START: validatePagination
+2026-10-28 16:13:03 INFO  TestListener - PASS: validatePagination
+2026-10-28 16:13:08 INFO  TestListener - START: validateSearchFilteringPaginationAndNavigation
+2026-10-28 16:13:08 ERROR TestListener - FAIL: validateSearchFilteringPaginationAndNavigation
+java.lang.AssertionError: PlaywrightPractice link not found expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.10.2.jar:7.10.2]
+	at pages.WebTablePage.validateNavigation(WebTablePage.java:175) ~[test-classes/:?]
+	at pages.WebTablePage.validateEndToEnd(WebTablePage.java:202) ~[test-classes/:?]
+	at tests.EndToEndValidationTest.validateSearchFilteringPaginationAndNavigation(EndToEndValidationTest.java:13) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.2.jar:3.5.2]
+2026-10-28 16:28:54 INFO  TestListener - START: validateSearch
+2026-10-28 16:28:54 INFO  TestListener - PASS: validateSearch
+2026-10-28 16:29:00 INFO  TestListener - START: validateSorting
+2026-10-28 16:29:03 INFO  TestListener - PASS: validateSorting
+2026-10-28 16:29:09 INFO  TestListener - START: validateFilter
+2026-10-28 16:29:09 INFO  TestListener - PASS: validateFilter
+2026-10-28 16:29:15 INFO  TestListener - START: validatePagination
+2026-10-28 16:29:15 INFO  TestListener - PASS: validatePagination
+2026-10-28 16:29:20 INFO  TestListener - START: validateSearchFilteringPaginationAndNavigation
+2026-10-28 16:29:26 INFO  TestListener - PASS: validateSearchFilteringPaginationAndNavigation
